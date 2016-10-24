@@ -324,7 +324,7 @@ public abstract class Email
     private boolean sendPartial;
 
     /** The Session to mail with. */
-    private Session session;
+    protected Session session;
 
     /**
      * Setting to true will enable the display of debug information.
@@ -1206,7 +1206,7 @@ public abstract class Email
     /**
      * Gets the specified header.
      *
-     * @param header A string with the header. 
+     * @param header A string with the header.
      * @return The value of the header, or null if no such header.
      */
     public String getHeader(final String header)
@@ -1223,7 +1223,7 @@ public abstract class Email
     {
         return this.headers;
     }
-    
+
     /**
      * Set the email subject.
      *
